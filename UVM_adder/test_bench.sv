@@ -1,6 +1,7 @@
 //`timescale 1ns / 1ps
-`define LENGTH  4
-`include "dut.sv"
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+`include "adder.sv"
 `include "interface.sv"
 `include "sequence_item.sv"
 `include "sequence.sv"
