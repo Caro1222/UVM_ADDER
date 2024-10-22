@@ -19,8 +19,8 @@ module tb;
   always #10 clk =~ clk;
   des_if _if(clk);
 
-  det_adder u0 (.clk(clk),
-               .rstn(_if.rstn),.in(_if.in)
+  adder u0 (.clk(clk),
+               .reset(_if.rstn),
                .in1(_if.in1),
                .in2(_if.in2),
                .out(_if.out));

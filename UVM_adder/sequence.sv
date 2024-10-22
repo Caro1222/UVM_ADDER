@@ -1,4 +1,4 @@
-class gen_item_sew extends uvm_sequence;
+class gen_item_seq extends uvm_sequence;
     `uvm_object_utils(gen_item_seq)
     function new(string name="gen_item_seq");
         super.new(name);
