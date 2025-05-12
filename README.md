@@ -2,11 +2,7 @@
 
 ```mermaid
 flowchart TD
-    subgraph Sala de Cine
-        U1[🎟️ Espectadores entran al cine]
-        U2[🎥 Inicia la película]
-    end
-
+    U1[🎟️ Sala de Cine]
     subgraph Operador
         O1[🧑‍💻 Inicia el sistema]
     end
@@ -28,7 +24,7 @@ flowchart TD
     end
 
     U1 --> U2
-    U2 --> O1
+    U1 --> O1
     O1 --> R2
     R2 --> CAM1
     CAM1 --> R3
